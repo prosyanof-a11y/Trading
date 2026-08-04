@@ -10,6 +10,7 @@ from src.trading.connectors.alpaca.profiles import ALPACA_PROFILES
 from src.trading.connectors.binance.profiles import BINANCE_PROFILES
 from src.trading.connectors.dhan.profiles import DHAN_PROFILES
 from src.trading.connectors.futu.profiles import FUTU_PROFILES
+from src.trading.connectors.gate.profiles import GATE_PROFILES
 from src.trading.connectors.ibkr.profiles import IBKR_PROFILES
 from src.trading.connectors.longbridge.profiles import LONGBRIDGE_PROFILES
 from src.trading.connectors.mt5.profiles import MT5_PROFILES
@@ -31,6 +32,7 @@ BUILTIN_PROFILES: tuple[TradingProfile, ...] = (
     *ALPACA_PROFILES,
     *OKX_PROFILES,
     *BINANCE_PROFILES,
+    *GATE_PROFILES,
     *FUTU_PROFILES,
     *DHAN_PROFILES,
     *SHOONYA_PROFILES,
